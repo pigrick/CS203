@@ -26,10 +26,14 @@ public class AutomobileTestDrive {
         automobiles.add(c1);
         automobiles.add(c2);
         automobiles.add(c3);
-        
+        get();
         for(Automobile auto : automobiles){
             
             System.out.println(auto.toString());
         }
+    }
+    
+    public static void get(){
+        System.out.println("get");
     }
 }
