@@ -48,22 +48,18 @@ public class BallMoving {
                 if (y < 0){
                     y = 0;
                 }
-            } else if (down){
+            } else if (down && y< drawpanel.getHeight() - 30){
                 y += 5;
-                if (y>520){
-                    y = 520;
-                }
+                
             }
             if(left){
                 x -= 5;
                 if (x<0){
                     x = 0;
                 }
-            } else if (right){
+            } else if (right && x< drawpanel.getWidth() - 30){
                 x += 5;
-                if (x>550){
-                    x = 550;
-                }
+               
             }
             
             drawpanel.repaint();
