@@ -124,7 +124,7 @@ public class GameOfLifeDraft {
             }
 
             //cells left
-            for (int i = 1; i < cells.length - 1; i++) {
+            for (int i = 1; i < cells.length - 2; i++) {
                 //top
                 if (cells[i - 1][0] == true) {
                     neightbours[i][0] += 1;
@@ -148,7 +148,7 @@ public class GameOfLifeDraft {
             }
 
             //cells right
-            for (int i = 1; i < cells.length - 1; i++) {
+            for (int i = 1; i < cells.length - 2; i++) {
                 //top
                 if (cells[i - 1][cells.length - 1] == true) {
                     neightbours[i][cells.length - 1] += 1;
@@ -172,7 +172,7 @@ public class GameOfLifeDraft {
             }
 
             //cells bottom
-            for (int i = 1; i < cells[cells.length - 1].length - 1; i++) {
+            for (int i = 1; i < cells[cells.length - 2].length - 1; i++) {
                 //left
                 if (cells[cells.length - 1][i - 1] == true) {
                     neightbours[cells.length - 1][i] += 1;
