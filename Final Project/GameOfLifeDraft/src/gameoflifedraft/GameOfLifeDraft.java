@@ -265,9 +265,11 @@ public class GameOfLifeDraft {
             System.out.println();
             }
             System.out.println("-------------------------");
-            System.out.println("Enter to proceed to next level!");
-            enter.nextLine();
-
+            System.out.println("Enter to proceed to next level! or type no to end!");
+            String no = enter.nextLine();
+            if(no.equals("no")){
+                return;
+            }
         }
     }
 
